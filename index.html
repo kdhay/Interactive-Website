@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta viewport="width=device-width, initial-scale=1.0">
+  <title>Simple Drawing App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="toolbar">
+    <label for="colorPicker">Color:</label>
+    <input type="color" id="colorPicker">
+    
+    <label for="lineWidth">Stroke Weight:</label>
+    <input type="number" id="lineWidth" min="1" max="20">
+    
+    <label for="strokeType">Pen Type:</label>
+    <select id="strokeType">
+      <option value="solid">Solid</option>
+      <option value="dashed">Dashed</option>
+      <option value="dashType1">Dash Type 1</option>
+      <option value="dashType2">Dash Type 2</option>
+    </select>
+    
+    <label for="opacityDropdown">Opacity:</label>
+    <select id="opacityDropdown">
+      <option value="255">Opaque</option>
+      <option value="200">Mostly Opaque</option>
+      <option value="150">Semi-Transparent</option>
+      <option value="100">Mostly Transparent</option>
+      <option value="50">Very Transparent</option>
+    </select>
+    
+    <button id="clearBtn">Clear</button>
+    <button id="eraserBtn">🧹 Eraser</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
